@@ -131,7 +131,7 @@
               ><i class="bi bi-hdd-stack navicon"></i> Services</a
             >
           </li>
-          
+
           <li>
             <a href="#contact"
               ><i class="bi bi-envelope navicon"></i> Contact</a
@@ -196,11 +196,13 @@
                 Frontend Developer &amp; Graphic Designer &amp; UX-UI Designer
               </h2>
               <p class="fst-italic py-3">
-                Grounded and solution oriented graphic designer over 3 yr of
-                experience in software industry. 2 yrs experience of frontend
-                developer graphics designer and UX-UI designer. Curious to learn
-                and passionate about designing and user experience, adapt at
-                motivating self and other.
+                Grounded and solution-oriented graphic designer with over 4
+                years of comprehensive experience in the software industry,
+                specializing in frontend development, graphics design, and UX-UI
+                design. Passionate about designing and enhancing user
+                experiences, and adept at motivating both self and others.
+                Continuously curious and committed to staying at the forefront
+                of design trends and technology.
               </p>
               <div class="row">
                 <div class="col-lg-6">
@@ -504,11 +506,13 @@
                 <h4>Tahir Khan</h4>
                 <p>
                   <em
-                    >Grounded and solution oriented graphic designer over 3 yr
-                    of experience in software industry. 2 yrs experience of
-                    frontend developer graphics designer and UX-UI designer.
-                    Curious to learn and passionate about designing and user
-                    experience, adapt at motivating self and other.</em
+                    >Grounded and solution-oriented graphic designer with over 4
+                    years of comprehensive experience in the software industry,
+                    specializing in frontend development, graphics design, and
+                    UX-UI design. Passionate about designing and enhancing user
+                    experiences, and adept at motivating both self and others.
+                    Continuously curious and committed to staying at the
+                    forefront of design trends and technology.</em
                   >
                 </p>
                 <ul>
@@ -1140,7 +1144,8 @@
                 </div>
                 <!-- End Info Item -->
 
-                <iframe style="height: 50vh; width: 100%;"
+                <iframe
+                  style="height: 50vh; width: 100%"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.9396365005005!2d76.03526348676245!3d22.969744945042933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963179e0b98083f%3A0x646f05f021714656!2sAlkapuri%20Colony%2C%20Nagar%20Nigam%20Colony%2C%20Dewas%2C%20Madhya%20Pradesh%20455001!5e0!3m2!1sen!2sin!4v1725102583934!5m2!1sen!2sin"
                   style="border: 0"
                   allowfullscreen=""
@@ -1259,5 +1264,32 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- inspect mode off  -->
+    <script>
+      // Right-click ko disable karein
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      }); // Keyboard shortcuts ko disable karein
+
+      function ctrlShiftKey(e, keyCode) {
+        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+      }
+
+      document.onkeydown = function (e) {
+        // F12 key ko disable karein
+        if (e.keyCode === 123) {
+          return false;
+        } // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U ko disable karein
+        if (
+          ctrlShiftKey(e, "I") ||
+          ctrlShiftKey(e, "J") ||
+          ctrlShiftKey(e, "C") ||
+          (e.ctrlKey && e.keyCode === "U".charCodeAt(0))
+        ) {
+          return false;
+        }
+      };
+    </script>
   </body>
 </html>
